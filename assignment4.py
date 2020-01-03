@@ -58,6 +58,8 @@ def with_health(start_index, maze, health_time):
         H_counter += i.count("H")
     for i in range(H_counter):  # Solve maze for H time.
         start_index = maze_solver(start_index, maze, "H")
+        for i in maze:
+            print(i)
         T_counter_old = T_counter
         T_counter = 0
         for j in maze:
